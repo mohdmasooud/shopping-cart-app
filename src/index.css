@@ -1,0 +1,35 @@
+/* Global custom styles & enhancements */
+:root {
+  --primary-font: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: #f8f9fa;
+  color: #212529;
+  overflow-x: hidden;
+}
+
+/* Card hover transitions */
+.transition-hover {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.transition-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12) !important;
+}
+
+/* 2-line title clamping */
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Smooth modal/offcanvas animations */
+.offcanvas {
+  transition: transform 0.3s ease-in-out;
+}
